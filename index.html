@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PX to VW Converter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="field pixel">
+    		<label for="pixel">Enter Your Pixel Unit</label>
+    		<input id="pixel" name="pixel" autofocus oninput="show()" type="number" min="0" class="m-pixel" placeholder="enter your pixel unit" autofocus/>
+    	</div>
+    	<div class="field pixel">
+    		<label for="vpwidth">Enter Your viewport width</label>
+    		<input id="vpwidth" oninput="show()" name="vpwidth"  type="number" min="0" class="m-vpwidth" value="1920"/>
+    	</div>
+    	<div class="output" onclick="copyToClipboard('#labelText')">
+    		<label id="labelText"></label>
+        <button onclick="copyToClipboard('#labelText')">Click to copy to clipboard</button>
+        <h3 id="copied" style="display:none; position:absolute;left:47%;">Copied</h3>
+    	</div>
+      <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@keyframes bounce {
+0%{transform:translateY(1px)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(1px)}
+}
+body{margin:0 auto;padding:10% 0;font-style:normal;font-family:"news-gothic-std",sans-serif;font-weight:400;color:#fff;max-width:80%;background-color:#123456}
+.field{font-size:0;margin-bottom:3vw}
+.field label{width:50%;display:inline-block;vertical-align:middle;text-align:left;font-size:3vw;padding-bottom:0}
+input,select{-webkit-appearance:none;-moz-appearance:none;border:0 solid #3f424c;width:50%;margin-bottom:0;height:7vw;float:none;clear:both;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;vertical-align:middle;letter-spacing:.6vw;line-height:normal;border-radius:0;background:#FFF;color:#ff69b4;font-size:2vw;font-family:"news-gothic-std",sans-serif;text-indent:0;text-transform:lowercase;padding:0 2.6vw;outline:none}
+div.button{text-align:center}
+div.button a{background:#9a297b;color:#fff;text-transform:uppercase;letter-spacing:2px;padding:13px 31px;display:inline-block;text-decoration:none;font-size:14px}
+div.output{display:none;text-align:center}
+div.output label{background:none #42476a;width:100%;display:block;margin:20px 0;text-align:center;font-size:3vw;font-size:3vw;padding:20px 0;cursor:pointer}
+@media only screen and (min-width: 768px) {
+body{max-width:60%}
+.field label{font-size:1.7vw}
+input,select{font-size:1.25vw;height:3.54vw;padding-left:.9vw;padding-right:.9vw;letter-spacing:.2vw}
+}
+.output button{width:500px;height:50px;border-radius:1px;border-color:#42476a;font-size:20px;font-weight:500;color:#FFF;background-color:#42476a;animation:bounce infinite 4s;margin-top:10px;cursor:pointer}
+.output button::after{content:"";position:absolute;left:75%;top:-10px;border-width:17px 15px 0;border-style:solid;border-color:#42476a transparent;display:block;width:0;transform:rotateZ(180deg)}
