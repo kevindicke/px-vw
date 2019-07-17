@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a href="/">Home</a>
-    <div class="field pixel">
-    		<label for="pixel">Enter Your Pixel Unit</label>
-    		<input id="pixel" name="pixel" oninput="show()" type="number" min="0" class="m-pixel" placeholder="enter your pixel unit" autofocus/>
-    	</div>
-    	<div class="field pixel">
-    		<label for="vpwidth">Enter Your viewport width</label>
-    		<input id="vpwidth" oninput="show()" name="vpwidth"  type="number" min="0" class="m-vpwidth" value="1920"/>
-    	</div>
-    	<div class="output" onclick="copyToClipboard('#labelText')">
-    		<label id="labelText"></label>
-        <button onclick="copyToClipboard('#labelText')">Click to copy to clipboard</button>
-        <h3 id="copied" style="display:none; position:absolute;left:47%;">Copied</h3>
-    	</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/">PX-VW</a>
+    </nav>
+    <div id="pxvw">
+      <div class="field pixel">
+          <label for="pixel">Enter Your Pixel Unit</label>
+          <input id="pixel" name="pixel" oninput="show()" type="number" min="0" class="m-pixel" placeholder="enter your pixel unit" autofocus/>
+        </div>
+        <div class="field pixel">
+          <label for="vpwidth">Enter Your viewport width</label>
+          <input id="vpwidth" oninput="show()" name="vpwidth"  type="number" min="0" class="m-vpwidth" value="1920"/>
+        </div>
+        <div class="output" onclick="copyToClipboard('#labelText')">
+          <label id="labelText"></label>
+          <button onclick="copyToClipboard('#labelText')">Click to copy to clipboard</button>
+          <h3 id="copied" style="display:none; position:absolute;left:47%;">Copied</h3>
+        </div>
+    </div>
       <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
