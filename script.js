@@ -1,4 +1,4 @@
-
+console.log("Contact me at k.dicke7@gmail.com");
 function show(){
 		var pxValue = jQuery('#pixel').val();
 		var vpwidth = jQuery('#vpwidth').val();
