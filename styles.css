@@ -4,7 +4,7 @@
 100%{transform:translateY(1px)}
 }
 body{margin:0 auto;font-style:normal;font-family:"news-gothic-std",sans-serif;font-weight:400;color:#fff;background-color:#123456}
-nav{position: fixed;top: 0;width: 100%;background-color: rgba(255,255,255,0.5);height: 4vw;display: flex;align-items: center;padding: 0 15px;}
+nav{position: fixed;top: 0;width: 100%;background-color: rgba(255,255,255,0.5);height: 4vw;max-height:50px;display: flex;align-items: center;padding: 0 15px;}
 nav a{font-size:1.5vw;text-decoration: none;color:#FFF;margin:0 1vw;letter-spacing:0.075em;}
 #pxvw{width: 65%;margin: 12vw auto 0;}
 .field{font-size:0;margin-bottom:3vw}
@@ -17,6 +17,9 @@ div.output label{background:none #42476a;width:100%;display:block;margin:20px 0;
 @media only screen and (min-width: 768px) {
 .field label{font-size:1.7vw}
 input,select{font-size:1.25vw;height:3.54vw;padding-left:.9vw;padding-right:.9vw;letter-spacing:.2vw}
+}
+@media(min-width:1920px){
+  nav a{font-size:18px;}
 }
 .output button{width:500px;height:50px;border-radius:1px;border-color:#42476a;font-size:20px;font-weight:500;color:#FFF;background-color:#42476a;animation:bounce infinite 4s;margin-top:10px;cursor:pointer}
 .output button::after{content:"";position:absolute;left:75%;top:-10px;border-width:17px 15px 0;border-style:solid;border-color:#42476a transparent;display:block;width:0;transform:rotateZ(180deg)}
